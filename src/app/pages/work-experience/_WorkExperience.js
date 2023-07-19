@@ -5,7 +5,7 @@ import { ExpandMore } from '@mui/icons-material';
 
 export default function WorkExperience(props){
     return (
-        <div className="page-box bg-mpLYellow-5">
+        <div className="page-box">
             <h1>Work Experience</h1>
 
             <br/>

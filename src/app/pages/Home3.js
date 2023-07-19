@@ -11,25 +11,23 @@ export default function Home(props){
     });
 
     return (
-        <div className="bg-mpLYellow-5 page-box">
+        <div className="page-box">
             <div className="grid grid-cols-1 justify-items-center">
-                <div className="text-center h-48 w-48 bg-mpLGrey-3">
-                    <h2>Picture</h2>
+                <h2>Web Developer & Educator</h2>
+
+                <div className="clear-both h-6"/>
+
+                <div className="text-center h-48 w-48">
+                    <img
+                        src="https://i.imgur.com/N5Dll8M.png"
+                        className="bg-transparent"
+                        alt="headshot"
+                    />
                 </div>
 
-                <div className="clear-both h-2"/>
+                <div className="clear-both h-8"/>
 
-                <h1>Riley Matsuda</h1>
-
-                <div className="clear-both h-2"/>
-
-                <h5>University of California, Los Angeles</h5>
-                <h5>Bioengineering, Class of 2019</h5>
-                <h5>Technical Breadth: Computer Science</h5>
-                <h5>
-                    Email: <a className="text-mpLRed-1">riley@thematsudas.com</a> | 
-                    LinkedIn: <a href="https://www.linkedin.com/in/riley-matsuda/" target="_blank" className="text-mpLRed-1">linkedin.com/in/riley-matsuda</a>
-                </h5>
+                <h5>I enjoy creating cool things and teaching people new skills.</h5>
             </div>
 
             <div className="clear-both h-8"/>
@@ -41,10 +39,8 @@ export default function Home(props){
             <h1 className="text-center">
                 About Me
             </h1>
-            <div className="clear-both h-4"/>
-            <div>
-                
-            </div>
+
+            <div className="clear-both h-4"/> 
 
             <br/>
 

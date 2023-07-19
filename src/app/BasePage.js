@@ -1,8 +1,9 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 
 import Home from './pages/Home';
 import NavBar from './components/NavBar';
+import ScrollBar from './components/ScrollBar';
 
 import { basePageClasses } from './components/classes';
 
@@ -23,27 +24,46 @@ function getClassNames(showSide){
     else return basePageClasses.noSideBar;
 }
 
-const panelClasses = "grid grid-cols-1 duration-300";
-
 // Todo: Add scroll tracking for sidebar highlights
 // Todo: Add view on desktop notification
 // Todo: Figure out bold/italic (Other Works section)
 // Todo: Hide menu bar if not on home page
 // Todo: Move graphics to cloudinary
 
-function makeid(length) {
-    let result = '';
-    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-    const charactersLength = characters.length;
-    let counter = 0;
-    while (counter < length) {
-      result += characters.charAt(Math.floor(Math.random() * charactersLength));
-      counter += 1;
-    }
-    return result;
-}
-
 export default function BasePage(props){
+    const mounted = useRef(false);
+    useEffect(() => {
+        mounted.current = true;
+        return () => (mounted.current = false);
+    });
+
+    const [windowHeight, setWindowHeight] = useState(window.innerHeight);
+    const [scrollPosition, setScrollPosition] = useState(0 + windowHeight);
+    const [documentHeight, setDocumentHeight] = useState(0);
+
+    const handleScroll = () => {
+        const position = window.scrollY;
+        if(mounted.current) setScrollPosition(position);
+    };
+    const handleHeight = (e) => {
+        const height = e.target.innerHeight;
+        if(mounted.current) setWindowHeight(height);
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll, { passive: true });
+        window.addEventListener('resize', handleHeight);
+
+        if(mounted.current) setDocumentHeight(document.documentElement.scrollHeight);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+            window.removeEventListener('resize', handleHeight);
+        }
+    });
+
+    const isHome = document.getElementById('home_screen_name') ? true : false;
+
     return (
         <div>
             {/* <div className="h-screen fixed z-0">
@@ -53,14 +73,19 @@ export default function BasePage(props){
                     src={"/media/bg/bg-2.jpg"}
                 />
             </div> */}
-            <div className="h-full absolute min-h-screen z-50">
-                <div className={`top-0 h-20 ${panelClasses} ${basePageClasses.sideBar}`}>
-                    <NavBar/>
-                </div>
+            <div className="h-min-content absolute min-h-screen">
+                <NavBar
+                    scrollPosition={scrollPosition}
+                />
 
-                <div className="clear-both h-8"/>
+                <ScrollBar
+                    show={isHome}
+                    scrollPosition={scrollPosition}
+                    windowHeight={windowHeight}
+                    documentHeight={documentHeight}
+                />
                 
-                <div className={`min-h-screen ${panelClasses} ${basePageClasses.main}`}>
+                <div className={`min-h-screen ${basePageClasses.main}`}>
                     <Routes>
                         <Route path="/" element={<Home/>}/>
 

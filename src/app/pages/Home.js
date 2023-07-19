@@ -13,10 +13,6 @@ export default function Home(props){
     return (
         <div className="page-box">
             <div className="grid grid-cols-1 justify-items-center">
-                <h2>Web Developer & Educator</h2>
-
-                <div className="clear-both h-2"/>
-
                 <div className="text-center h-48 w-48">
                     <img
                         src="https://i.imgur.com/N5Dll8M.png"
@@ -25,9 +21,30 @@ export default function Home(props){
                     />
                 </div>
 
-                <div className="clear-both h-4"/>
+                <div className="clear-both h-2"/>
 
-                <h5>My name is Riley. I enjoy creating things and teaching people new skills.</h5>
+                <h1 id="home_screen_name">Riley Matsuda</h1>
+
+                <div className="clear-both h-2"/>
+
+                <h5>University of California, Los Angeles</h5>
+                <h5>Bioengineering, B.S. Class of 2019</h5>
+                <h5>Technical Breadth: Computer Science</h5>
+                <h5>
+                    <a
+                        className="text-mpLRed-1"
+                    >
+                        riley@thematsudas.com
+                    </a>
+                    &nbsp;|&nbsp;
+                    <a
+                        href="https://www.linkedin.com/in/riley-matsuda/"
+                        target="_blank"
+                        className="text-mpLRed-1"
+                    >
+                        linkedin.com/in/riley-matsuda
+                    </a>
+                </h5>
             </div>
 
             <div className="clear-both h-8"/>
@@ -50,7 +67,7 @@ export default function Home(props){
                 I am a full-stack web developer who is passionate about <b>programming</b> and <b>education</b>.
                 I enjoy <b>learning new things</b> and <b>finding ways to innovate and improve existing processes</b>.
                 For the past three and a half years, I have been fortunate enough to work at learning centers
-                that allowed me to pursue both programming and education simultaneously. I have recently decided
+                that allowed me to pursue both programming and education simultaneously. I recently decided
                 that it was time to move on in my career, and am <b>currently seeking employment</b>.
             </div>
 
@@ -221,10 +238,10 @@ export default function Home(props){
             </h3>
             <div>
                 <ul>
-                    <li>Directed research: Implantable Ear Drug Delivery Device</li>
-                    <li>InterVarsity Christian Fellowship: Fundraising Coordinator, Sound Team Coordinator</li>
-                    <li>UCLA Lab School: CalTeach Science Education Intern</li>
-                    <li>UCLA Ronald Reagan Medical Center: Nursing Volunteer</li>
+                    <li><b>Directed research:</b> Implantable Ear Drug Delivery Device</li>
+                    <li><b>InterVarsity Christian Fellowship:</b> Fundraising Coordinator, Sound Team Coordinator</li>
+                    <li><b>UCLA Lab School:</b> CalTeach Science Education Intern</li>
+                    <li><b>UCLA Ronald Reagan Medical Center:</b> Nursing Volunteer</li>
                     <li><Link to="/other-works/ucla" className="text-mpLRed-1">More Info</Link></li>
                 </ul>
             </div>

@@ -5,7 +5,7 @@ const mathnasiumLink = <a className="text-mpLRed-1" href="/work-experience/mathn
 
 export default function MathPlexTutoring(props){
     return (
-        <div className="page-box bg-mpLYellow-5">
+        <div className="page-box">
             <Link className="flex text-mpLRed-1" to="/">
                 Home
             </Link>

@@ -11,8 +11,20 @@ export default function NavBar(props){
         return () => (mounted.current = false);
     });
 
+    const { scrollPosition } = props;
+
+    const navHeight = document.getElementById('navbar-main')?.offsetHeight || 0;
+    const navAdditionalClasses = (
+        scrollPosition < navHeight ? 
+            navBarClasses.beforeTrigger 
+        : scrollPosition < 300 ? 
+            navBarClasses.midTrigger 
+        : 
+            navBarClasses.afterTrigger
+    );
+
     return (
-        <div className="bg-transparent px-6 py-6">
+        <div id="navbar-main" className={`${navBarClasses.default} ${navAdditionalClasses}`}>
             <div className="flex flex-row items-center">
                 <h1 className="text-teal cursor-pointer">
                     <Link className="cursor-pointer" to="/">RM</Link>
@@ -20,29 +32,29 @@ export default function NavBar(props){
 
                 <div className="ml-auto mr-6 flex flex-row gap-x-10 items-center">
                     <Link to="/work-experience">
-                        <h6>
+                        <h6 className="hover-text-teal">
                             Work Experience
                         </h6>
                     </Link>
 
                     <Link to="/personal-projects">
-                        <h6>
+                        <h6 className="hover-text-teal">
                             Personal Projects
                         </h6>
                     </Link>
 
                     <a
                         
-                        href="https://www.dropbox.com/s/qwjni65f897ppd6/Riley%20Matsuda.pdf?dl=1"
+                        href="https://dl.dropboxusercontent.com/scl/fi/mskw0og8a956ai9fsm6xa/Resume-Riley-Matsuda.pdf?rlkey=slc41s2zzsmm2gnzl35vm73od&dl=0"
                         target="_blank"
                         download
                     >
-                        <h6>
+                        <h6 className="hover-text-teal">
                             Download Resume
                         </h6>
                     </a>
 
-                    <button
+                    {/* <button
                         className={`text-teal border-teal bg-white
                             hover:border-transparent hover:bg-teal self-center hover:text-white
                             rounded-full duration-300 border px-4 py-2
@@ -51,7 +63,7 @@ export default function NavBar(props){
                         type="button"
                     >
                         Contact
-                    </button>
+                    </button> */}
                 </div>
 
 

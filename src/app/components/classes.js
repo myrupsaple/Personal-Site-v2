@@ -4,6 +4,13 @@ export const basePageClasses = {
 };
 
 export const navBarClasses = {
+    default: "px-6 py-4",
+    beforeTrigger: "bg-transparent",
+    midTrigger: "sticky top-[-10rem] transition-all duration-100",
+    afterTrigger: "bg-white h-full sticky top-0 transition-all duration-300"
+}
+
+export const sideBarClasses = {
     menuItems: {
         tier1: "ml-2 text-[#EED6C6] hover:text-[#FFF1E3] duration-300",
         tier2: "ml-6 text-[#DEAD8E] hover:text-[#FFF1E3] duration-300",
@@ -12,23 +19,23 @@ export const navBarClasses = {
 }
 
 export const uclaClasses = {
-    title: "text-[#00146b]",
+    title: "bold text-[#00146b]",
     date: "font-bold",
-    subtitle: "font-italic"
+    subtitle: "italic"
 }
 
 export const homeClasses = {
     workExperience: {
-        position: "",
+        position: "bold",
         content: ""
     },
     softwareProjects: {
-        utilized: "",
+        utilized: "bold",
         content: ""
     },
     otherWorks: {
-        title: "text-[#00146b]",
+        title: "bold text-[#00146b]",
         description: "font-bold ml-4",
-        date: "font-italic ml-4"
+        date: "italic ml-4"
     }
 }

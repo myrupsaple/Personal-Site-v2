@@ -10,6 +10,7 @@
 @layer base {
     html {
         scroll-behavior: smooth;
+        @apply bg-mpLYellow-5;
         @apply text-black;
     }
     * {
@@ -36,15 +37,15 @@
     ul {
         @apply list-disc ml-10;
     }
+    b, .bold {
+        @apply font-semibold;
+    }
     .page-box {
         @apply px-20 py-12;
         @apply text-black;
     }
-    .hover-text-blue {
-        @apply text-mpLBlue cursor-pointer hover:text-mpDBlue duration-300;
-    }
-    .hover-text-blue-inv {
-        @apply text-mpDBlue cursor-pointer hover:text-mpLBlue duration-300;
+    .hover-text-teal {
+        @apply hover:text-teal duration-300
     }
 }
 
