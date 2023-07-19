@@ -14,7 +14,11 @@ module.exports = {
           "black": "#000000",
           "transparent": "transparent",
           // New
-          "teal": "#00B0B0",
+          "teal": "#00a0a0",
+          "linen": "#f4eee8",
+          "slateLight": "#fafbfb",
+          "coral": "#d64b36",
+          "fedBlue": "#00146b",
           // Standard (0%)
           "mpLRed": "#d80000",
           "mpDRed": "#990000",

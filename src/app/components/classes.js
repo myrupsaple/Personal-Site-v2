@@ -6,7 +6,7 @@ export const basePageClasses = {
 export const navBarClasses = {
     default: "px-6 py-4",
     beforeTrigger: "bg-transparent",
-    midTrigger: "sticky top-[-10rem] transition-all duration-100",
+    midTrigger: "sticky transition-all top-[-8rem] duration-100",
     afterTrigger: "bg-white h-full sticky top-0 transition-all duration-300"
 }
 
@@ -19,7 +19,7 @@ export const sideBarClasses = {
 }
 
 export const uclaClasses = {
-    title: "bold text-[#00146b]",
+    title: "bold text-fedBlue",
     date: "font-bold",
     subtitle: "italic"
 }
@@ -34,7 +34,7 @@ export const homeClasses = {
         content: ""
     },
     otherWorks: {
-        title: "bold text-[#00146b]",
+        title: "bold text-fedBlue",
         description: "font-bold ml-4",
         date: "italic ml-4"
     }

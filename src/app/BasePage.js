@@ -3,7 +3,6 @@ import { Routes, Route } from 'react-router-dom';
 
 import Home from './pages/Home';
 import NavBar from './components/NavBar';
-import ScrollBar from './components/ScrollBar';
 
 import { basePageClasses } from './components/classes';
 
@@ -19,17 +18,6 @@ import Ucla from './pages/other-works/Ucla';
 // import Certifications from './pages/other-works/Certifications';
 import Photography from './pages/other-works/Photography';
 
-function getClassNames(showSide){
-    if(showSide) return basePageClasses.withSideBar;
-    else return basePageClasses.noSideBar;
-}
-
-// Todo: Add scroll tracking for sidebar highlights
-// Todo: Add view on desktop notification
-// Todo: Figure out bold/italic (Other Works section)
-// Todo: Hide menu bar if not on home page
-// Todo: Move graphics to cloudinary
-
 export default function BasePage(props){
     const mounted = useRef(false);
     useEffect(() => {
@@ -38,8 +26,11 @@ export default function BasePage(props){
     });
 
     const [windowHeight, setWindowHeight] = useState(window.innerHeight);
-    const [scrollPosition, setScrollPosition] = useState(0 + windowHeight);
+    const [scrollPosition, setScrollPosition] = useState(0);
     const [documentHeight, setDocumentHeight] = useState(0);
+
+    let scrollNavTrigger = document?.getElementById('navbar-main')?.offsetHeight || 100; // Pixels
+    scrollNavTrigger += 20;
 
     const handleScroll = () => {
         const position = window.scrollY;
@@ -76,11 +67,8 @@ export default function BasePage(props){
             <div className="h-min-content absolute min-h-screen">
                 <NavBar
                     scrollPosition={scrollPosition}
-                />
-
-                <ScrollBar
-                    show={isHome}
-                    scrollPosition={scrollPosition}
+                    scrollNavTrigger={scrollNavTrigger}
+                    showScroll={isHome}
                     windowHeight={windowHeight}
                     documentHeight={documentHeight}
                 />
