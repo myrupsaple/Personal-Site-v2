@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const mathnasiumLink = <a className="text-mpLRed-1" href="/work-experience/mathnasium">Mathnasium</a>;
+const mathnasiumLink = <a className="text-coral" href="/work-experience/mathnasium">Mathnasium</a>;
 
 export default function MathPlexTutoring(props){
     return (
         <div className="page-box">
-            <Link className="flex text-mpLRed-1" to="/">
-                Home
+            <Link className="flex text-coral" to="/work-experience">
+                &lt; Work Experience
             </Link>
 
             <br/>

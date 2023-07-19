@@ -10,6 +10,7 @@ import WorkExperience from './pages/work-experience/_WorkExperience';
 import MathPlexTutoring from './pages/work-experience/MathPlexTutoring';
 import Mathnasium from './pages/work-experience/Mathnasium';
 
+import SoftwareProjects from './pages/software-projects/_SoftwareProjects';
 import FinanceTracker from './pages/software-projects/FinanceTracker';
 import HungerGames from './pages/software-projects/HungerGames';
 import WordPredictor from './pages/software-projects/WordPredictor';
@@ -64,7 +65,7 @@ export default function BasePage(props){
                     src={"/media/bg/bg-2.jpg"}
                 />
             </div> */}
-            <div className="h-min-content absolute min-h-screen">
+            <div className="h-min-content absolute min-h-screen w-full">
                 <NavBar
                     scrollPosition={scrollPosition}
                     scrollNavTrigger={scrollNavTrigger}
@@ -81,6 +82,7 @@ export default function BasePage(props){
                         <Route path="/work-experience/mathplex-tutoring" exact element={<MathPlexTutoring/>}/>
                         <Route path="/work-experience/mathnasium" exact element={<Mathnasium/>}/>
 
+                        <Route path="/software-projects" element={<SoftwareProjects/>}/>
                         <Route path="/software-projects/finance-tracker" exact element={<FinanceTracker/>}/>
                         <Route path="/software-projects/hunger-games" exact element={<HungerGames/>}/>
                         <Route path="/software-projects/word-predictor" exact element={<WordPredictor/>}/>

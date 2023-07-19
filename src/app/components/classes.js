@@ -24,18 +24,18 @@ export const uclaClasses = {
     subtitle: "italic"
 }
 
-export const homeClasses = {
-    workExperience: {
-        position: "bold",
-        content: ""
-    },
-    softwareProjects: {
-        utilized: "bold",
-        content: ""
-    },
-    otherWorks: {
-        title: "bold text-fedBlue",
-        description: "font-bold ml-4",
-        date: "italic ml-4"
-    }
+export const workExperienceClasses = {
+    position: "bold",
+    content: ""
+}
+
+export const softwareProjectClasses = {
+    utilized: "bold",
+    content: ""
+}
+
+export const otherWorksClasses = {
+    title: "bold text-fedBlue",
+    description: "font-bold ml-4",
+    date: "italic ml-4"
 }

@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom';
 import { Accordion, AccordionSummary, AccordionDetails } from '@mui/material';
 import { ExpandMore } from '@mui/icons-material';
 
-import FamiliarThings from './components/FamiliarThings';
-
 const accordionClasses = 'm-0';
 
 export default function WorkExperience(props){
@@ -17,7 +15,7 @@ export default function WorkExperience(props){
 
     return (
         <>
-            <h1 className="text-center">Work Experience</h1>
+            <h1 className="text-center">Software Projects</h1>
 
             <div className="clear-both h-4"/>
 
@@ -116,12 +114,6 @@ export default function WorkExperience(props){
                     </div>
                 </AccordionDetails>
             </Accordion>
-
-            <br/>
-            <hr/>
-            <br/>
-
-            <FamiliarThings/>
         </>
     );
 }

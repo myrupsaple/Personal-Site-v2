@@ -6,7 +6,7 @@ import { uclaClasses } from '../../components/classes';
 export default function Ucla(props){
     return (
         <div className="page-box">
-            <Link className="flex text-mpLRed-1" to="/">
+            <Link className="flex text-coral" to="/">
                 Back
             </Link>
 
@@ -27,7 +27,7 @@ export default function Ucla(props){
                     <li>Received the runner-up award for best presentation at the annual UCLA Bioengineering Symposium.</li>
                     <li>
                         Continued research for two quarters beyond the symposium, eventually culminating in a publication in the American Academy of Otolaryngology
-                        (<a className="text-mpLRed-1" href="https://journals.sagepub.com/doi/abs/10.1177/0194599820930229" target="_blank">Link</a>).
+                        (<a className="text-coral" href="https://journals.sagepub.com/doi/abs/10.1177/0194599820930229" target="_blank">Link</a>).
                     </li>
                 </ul>
             </div>

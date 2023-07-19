@@ -44,6 +44,10 @@
         @apply px-20 py-12;
         @apply text-black;
     }
+    .page-box-wide {
+        @apply px-12 py-12;
+        @apply text-black;
+    }
     .hover-text-teal {
         @apply hover:text-teal duration-300
     }

@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 export default function HungerGames(props){
     return (
         <div className="page-box">
-            <Link className="flex text-mpLRed-1" to="/">
-                Back
+            <Link className="flex text-coral" to="/software-projects">
+                &lt; Software Projects
             </Link>
 
             <br/>

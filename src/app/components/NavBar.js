@@ -25,7 +25,7 @@ export default function NavBar(props){
     );
 
     return (
-        <div id="navbar-main" className={navStickyClasses}>
+        <div id="navbar-main" className={`${navStickyClasses} z-[99999]`}>
             <div className={`flex flex-row items-center ${navBarClasses.default}`}>
                 <h1 className="text-teal cursor-pointer">
                     <Link className="cursor-pointer" to="/">RM</Link>
@@ -38,7 +38,7 @@ export default function NavBar(props){
                         </h6>
                     </Link>
 
-                    <Link to="/personal-projects">
+                    <Link to="/software-projects">
                         <h6 className="hover:text-lg hover-text-coral">
                             Personal Projects
                         </h6>

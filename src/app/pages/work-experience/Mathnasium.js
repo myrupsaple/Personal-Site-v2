@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 export default function Mathnasium(props){
     return (
         <div className="page-box">
-            <Link className="flex text-mpLRed-1" to="/">
-                Back
+            <Link className="flex text-coral" to="/work-experience">
+                &lt; Work Experience
             </Link>
 
             <br/>
