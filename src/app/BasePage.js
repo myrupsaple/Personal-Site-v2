@@ -11,13 +11,15 @@ import MathPlexTutoring from './pages/work-experience/MathPlexTutoring';
 import Mathnasium from './pages/work-experience/Mathnasium';
 
 import SoftwareProjects from './pages/software-projects/_SoftwareProjects';
-import FinanceTracker from './pages/software-projects/FinanceTracker';
+// import FinanceTracker from './pages/software-projects/FinanceTracker';
 import HungerGames from './pages/software-projects/HungerGames';
 import WordPredictor from './pages/software-projects/WordPredictor';
 
-import Ucla from './pages/other-works/Ucla';
 // import Certifications from './pages/other-works/Certifications';
+import Ucla from './pages/other-works/Ucla';
 import Photography from './pages/other-works/Photography';
+
+import NotFound from './components/NotFound';
 
 export default function BasePage(props){
     const mounted = useRef(false);
@@ -83,13 +85,15 @@ export default function BasePage(props){
                         <Route path="/work-experience/mathnasium" exact element={<Mathnasium/>}/>
 
                         <Route path="/software-projects" element={<SoftwareProjects/>}/>
-                        <Route path="/software-projects/finance-tracker" exact element={<FinanceTracker/>}/>
+                        {/* <Route path="/software-projects/finance-tracker" exact element={<FinanceTracker/>}/> */}
                         <Route path="/software-projects/hunger-games" exact element={<HungerGames/>}/>
                         <Route path="/software-projects/word-predictor" exact element={<WordPredictor/>}/>
 
                         {/* <Route path="/other-works/certifications" element={<Certifications/>}/> */}
                         <Route path="/other-works/ucla" exact element={<Ucla/>}/>
                         <Route path="/other-works/photography" exact element={<Photography/>}/>
+
+                        <Route path="*" element={<NotFound/>}/>
                     </Routes>
                 </div>
             </div>

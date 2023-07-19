@@ -7,8 +7,8 @@ export default function SoftwareProjects(props){
     return (
         <div className="page-box-wide">
             <div className="card">
-                <Link className="flex text-coral" to="/software-projects">
-                    &lt; Software Projects
+                <Link className="flex text-coral" to="/">
+                    &lt; Home
                 </Link>
                 
                 <h1
@@ -20,16 +20,16 @@ export default function SoftwareProjects(props){
                 <div className="clear-both h-4"/>
 
                 <h4 id="software_projects_finance_tracker">
-                    <Link to="/software-projects/finance-tracker" className="text-coral">
+                    {/* <Link to="/software-projects/finance-tracker" className="text-coral"> */}
                         Finance Tracker
-                    </Link>
+                    {/* </Link> */}
                 </h4>
                 <h6 className={softwareProjectClasses.utilized}><a>Utilized</a>: Windows Forms, .NET, C#, and SQL.</h6>
                 <div className={softwareProjectClasses.content}>
                     <ul>
                         <li>Developed a Windows desktop app using Windows Forms and .NET that allows users to track spending habits.</li>
                         <li>Connected the app to a SQL Server database allowing users to log in and store transactions persistently.</li>
-                        <li><Link to="/software-projects/finance-tracker" className="text-coral">More Info</Link></li>
+                        {/* <li><Link to="/software-projects/finance-tracker" className="text-coral">More Info</Link></li> */}
                     </ul>
                 </div>
 

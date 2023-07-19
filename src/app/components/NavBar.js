@@ -27,19 +27,19 @@ export default function NavBar(props){
     return (
         <div id="navbar-main" className={`${navStickyClasses} z-[99999]`}>
             <div className={`flex flex-row items-center ${navBarClasses.default}`}>
-                <h1 className="text-teal cursor-pointer">
+                <h1 className={navBarClasses.leftSide}>
                     <Link className="cursor-pointer" to="/">RM</Link>
                 </h1>
 
-                <div className="ml-auto mr-6 flex flex-row gap-x-10 items-center">
+                <div className={navBarClasses.rightSide}>
                     <Link to="/work-experience">
-                        <h6 className="hover:text-lg hover-text-coral">
+                        <h6 className={navBarClasses.rightSideItems.coral}>
                             Work Experience
                         </h6>
                     </Link>
 
                     <Link to="/software-projects">
-                        <h6 className="hover:text-lg hover-text-coral">
+                        <h6 className={navBarClasses.rightSideItems.coral}>
                             Personal Projects
                         </h6>
                     </Link>
@@ -50,7 +50,7 @@ export default function NavBar(props){
                         target="_blank"
                         download
                     >
-                        <h6 className="hover:text-lg hover-text-teal">
+                        <h6 className={navBarClasses.rightSideItems.teal}>
                             Download Resume
                         </h6>
                     </a>
