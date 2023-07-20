@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import { imgClasses } from '../../components/classes';
+
 export default function Mathnasium(props){
     return (
         <div className="page-box">
@@ -39,12 +41,12 @@ export default function Mathnasium(props){
 
             <br/>
 
-            <div className="flex flex-row gap-x-4 justify-center">
+            <div className={imgClasses.imgBox}>
                 <div>
-                    <img src="https://i.imgur.com/hbqWjwH.png" className="max-w-xl" alt="admin-1a"/>
+                    <img src="https://i.imgur.com/hbqWjwH.png" className={imgClasses.imgDuo} alt="admin-1a"/>
                 </div>
                 <div>
-                    <img src="https://i.imgur.com/L7qwa0O.png" className="max-w-xl" alt="admin-1b"/>
+                    <img src="https://i.imgur.com/L7qwa0O.png" className={imgClasses.imgDuo} alt="admin-1b"/>
                 </div>
             </div>
 
@@ -54,12 +56,12 @@ export default function Mathnasium(props){
 
             <br/>
 
-            <div className="flex flex-row gap-x-4 justify-center ">
+            <div className={imgClasses.imgBox}>
                 <div>
-                    <img src="https://i.imgur.com/f8vNcIS.png" className="max-w-xl" alt="member-1a"/>
+                    <img src="https://i.imgur.com/f8vNcIS.png" className={imgClasses.imgDuo} alt="member-1a"/>
                 </div>
                 <div>
-                    <img src="https://i.imgur.com/bxNR0Pg.png" className="max-w-xl" alt="member-1b"/>
+                    <img src="https://i.imgur.com/bxNR0Pg.png" className={imgClasses.imgDuo} alt="member-1b"/>
                 </div>
             </div>
 
@@ -73,12 +75,12 @@ export default function Mathnasium(props){
 
             <br/>
 
-            <div className="flex flex-row gap-x-4 justify-center">
+            <div className={imgClasses.imgBox}>
                 <div>
-                    <img src="https://i.imgur.com/4pZdebv.png" className="max-w-xl" alt="admin-2a"/>
+                    <img src="https://i.imgur.com/4pZdebv.png" className={imgClasses.imgDuo} alt="admin-2a"/>
                 </div>
                 <div>
-                    <img src="https://i.imgur.com/g6T6Moq.png" className="max-w-xl" alt="admin-2b"/>
+                    <img src="https://i.imgur.com/g6T6Moq.png" className={imgClasses.imgDuo} alt="admin-2b"/>
                 </div>
             </div>
 
@@ -94,9 +96,9 @@ export default function Mathnasium(props){
 
             <br/>
 
-            <div className="flex flex-row gap-x-4 justify-center">
+            <div className={imgClasses.imgBox}>
                 <div>
-                    <img src="https://i.imgur.com/B5q0c7R.png" className="max-w-xl" alt="admin-3a"/>
+                    <img src="https://i.imgur.com/B5q0c7R.png" className={imgClasses.imgSingle} alt="admin-3a"/>
                 </div>
             </div>
 

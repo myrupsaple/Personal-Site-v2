@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import { imgClasses } from '../../components/classes';
+
 const mathnasiumLink = <a className="text-coral" href="/work-experience/mathnasium">Mathnasium</a>;
 
 export default function MathPlexTutoring(props){
@@ -46,12 +48,12 @@ export default function MathPlexTutoring(props){
 
             <br/>
 
-            <div className="flex flex-row gap-x-4 justify-center">
+            <div className={imgClasses.imgBox}>
                 <div>
-                    <img src="https://i.imgur.com/Kjffnuf.png" className="max-w-xl" alt="admin-1a"/>
+                    <img src="https://i.imgur.com/Kjffnuf.png" className={imgClasses.imgDuo} alt="admin-1a"/>
                 </div>
                 <div>
-                    <img src="https://i.imgur.com/kCfI7AI.png" className="max-w-xl" alt="admin-1b"/>
+                    <img src="https://i.imgur.com/kCfI7AI.png" className={imgClasses.imgDuo} alt="admin-1b"/>
                 </div>
             </div>
 
@@ -63,7 +65,7 @@ export default function MathPlexTutoring(props){
 
             <br/>
             
-            <div className="flex flex-row gap-x-4 justify-center">
+            <div className={imgClasses.imgBox}>
                 <div>
                     <img src="https://imgur.com/liwyBep.png" className="max-w-[12rem]" alt="admin-2a"/>
                 </div>
@@ -81,9 +83,9 @@ export default function MathPlexTutoring(props){
 
             <br/>
 
-            <div className="flex flex-row gap-x-4 justify-center">
+            <div className={imgClasses.imgBox}>
                 <div>
-                    <img src="https://i.imgur.com/ZxHB6nJ.png" className="max-w-xl" alt="admin-3"/>
+                    <img src="https://i.imgur.com/ZxHB6nJ.png" className={imgClasses.imgSingle} alt="admin-3"/>
                 </div>
             </div>
 
@@ -105,12 +107,12 @@ export default function MathPlexTutoring(props){
 
             <br/>
 
-            <div className="flex flex-row gap-x-4 justify-center">
+            <div className={imgClasses.imgBox}>
                 <div>
-                    <img src="https://i.imgur.com/hYv6acZ.png" className="max-w-xl" alt="admin-2a"/>
+                    <img src="https://i.imgur.com/hYv6acZ.png" className={imgClasses.imgDuo} alt="admin-2a"/>
                 </div>
                 <div>
-                    <img src="https://i.imgur.com/hMDif7O.png" className="max-w-xl" alt="admin-2a"/>
+                    <img src="https://i.imgur.com/hMDif7O.png" className={imgClasses.imgDuo} alt="admin-2a"/>
                 </div>
             </div>
 

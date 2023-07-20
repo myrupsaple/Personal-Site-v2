@@ -17,7 +17,7 @@ import WordPredictor from './pages/software-projects/WordPredictor';
 
 // import Certifications from './pages/other-works/Certifications';
 import Ucla from './pages/other-works/Ucla';
-import Photography from './pages/other-works/Photography';
+// import Photography from './pages/other-works/Photography';
 
 import NotFound from './components/NotFound';
 
@@ -91,7 +91,7 @@ export default function BasePage(props){
 
                         {/* <Route path="/other-works/certifications" element={<Certifications/>}/> */}
                         <Route path="/other-works/ucla" exact element={<Ucla/>}/>
-                        <Route path="/other-works/photography" exact element={<Photography/>}/>
+                        {/* <Route path="/other-works/photography" exact element={<Photography/>}/> */}
 
                         <Route path="*" element={<NotFound/>}/>
                     </Routes>

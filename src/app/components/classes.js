@@ -8,7 +8,7 @@ export const navBarClasses = {
     beforeTrigger: "bg-transparent",
     midTrigger: "sticky transition-all top-[-8rem] duration-100",
     afterTrigger: "bg-white h-full sticky top-0 transition-all duration-300",
-    leftSide: `text-teal mr-10 cursor-pointer text-4xl hover:text-[2.6rem] duration-300`,
+    leftSide: `text-teal mr-10 cursor-pointer text-4xl hover:text-[2.6rem] hover:text-coral duration-300`,
     rightSide: 
         `flex flex-row ml-auto items-center
         mr-0 sm:mr-2 md:mr-6
@@ -47,4 +47,10 @@ export const otherWorksClasses = {
     title: "bold text-fedBlue",
     description: "font-bold ml-4",
     date: "italic ml-4"
+}
+
+export const imgClasses = {
+    imgBox: "grid grid-cols-1 gap-y-2 lg:flex lg:flex-row lg:gap-x-4 justify-center justify-items-center",
+    imgSingle: "max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl",
+    imgDuo: "max-w-sm sm:max-w-md md:max-w-xl lg:max-w-md xl:max-w-xl"
 }

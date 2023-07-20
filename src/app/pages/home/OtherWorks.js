@@ -59,7 +59,7 @@ export default function OtherWorks(props){
                 </ul>
             </div>
 
-            <div className="clear-both h-8"/>
+            {/* <div className="clear-both h-8"/>
 
             <h3 id="other_works_photography">
                 <Link to="/other-works/photography" className="text-coral">
@@ -70,7 +70,7 @@ export default function OtherWorks(props){
                 <ul>
                     <li><Link to="/other-works/photography" className="text-coral">More Info</Link></li>
                 </ul>
-            </div>
+            </div> */}
         </>
     );
 }

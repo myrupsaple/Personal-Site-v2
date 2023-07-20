@@ -8,7 +8,7 @@ import FamiliarThings from './components/FamiliarThings';
 const accordionClasses = 'm-0';
 
 export default function WorkExperience(props){
-    const [activeTab, setActiveTab] = useState(-1);
+    const [activeTab, setActiveTab] = useState(1);
 
     const setTabWrapper = useCallback((index) => {
         if(index === activeTab) setActiveTab(-1);

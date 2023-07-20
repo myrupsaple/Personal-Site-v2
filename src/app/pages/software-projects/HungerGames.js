@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import { imgClasses } from '../../components/classes';
+
 export default function HungerGames(props){
     return (
         <div className="page-box">
@@ -32,12 +34,12 @@ export default function HungerGames(props){
 
             <br/>
 
-            <div className="flex flex-row gap-x-4 justify-center">
+            <div className={imgClasses.imgBox}>
                 <div>
-                    <img src="https://i.imgur.com/cUvjMZD.png" className="max-w-xl" alt="spreadsheet-1a"/>
+                    <img src="https://i.imgur.com/cUvjMZD.png" className={imgClasses.img} alt="spreadsheet-1a"/>
                 </div>
                 <div>
-                    <img src="https://i.imgur.com/KGkW5vR.png" className="max-w-xl" alt="spreadsheet-1b"/>
+                    <img src="https://i.imgur.com/KGkW5vR.png" className={imgClasses.img} alt="spreadsheet-1b"/>
                 </div>
             </div>
 
@@ -60,9 +62,9 @@ export default function HungerGames(props){
 
             <br/>
 
-            <div className="flex flex-row gap-x-4 justify-center">
+            <div className={imgClasses.imgBox}>
                 <div>
-                    <img src="https://i.imgur.com/s0zc19e.png" className="max-w-xl" alt="web-app-1a"/>
+                    <img src="https://i.imgur.com/s0zc19e.png" className={imgClasses.img} alt="web-app-1a"/>
                 </div>
                 <div>
                     <img src="https://i.imgur.com/RrByCJI.png" className="max-w-[15rem]" alt="web-app-1b"/>

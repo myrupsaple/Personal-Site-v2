@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { imgClasses } from '../../components/classes';
 
 export default function WordPredictor(props){
     return (
@@ -40,9 +41,9 @@ export default function WordPredictor(props){
 
             <br/>
 
-            <div className="flex flex-row gap-x-4 justify-center">
+            <div className={imgClasses.imgBox}>
                 <div>
-                    <img src="https://i.imgur.com/yjC53aI.png" className="max-w-5xl" alt="spreadsheet-1a"/>
+                    <img src="https://i.imgur.com/yjC53aI.png" className={"max-w-sm sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl"} alt="spreadsheet-1a"/>
                 </div>
             </div>
         </div>

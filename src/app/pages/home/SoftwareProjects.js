@@ -6,7 +6,7 @@ import { ExpandMore } from '@mui/icons-material';
 const accordionClasses = 'm-0';
 
 export default function WorkExperience(props){
-    const [activeTab, setActiveTab] = useState(-1);
+    const [activeTab, setActiveTab] = useState(1);
 
     const setTabWrapper = useCallback((index) => {
         if(index === activeTab) setActiveTab(-1);
@@ -61,7 +61,7 @@ export default function WorkExperience(props){
                 <AccordionSummary
                     expandIcon={<ExpandMore />}
                 >
-                    <b>Hunger Games Fundraising App (React)</b>
+                    <b>Hunger Games Fundraising App (ReactJS, NodeJS)</b>
                 </AccordionSummary>
                 <AccordionDetails>
                     <div>
