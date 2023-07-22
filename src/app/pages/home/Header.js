@@ -5,8 +5,7 @@ export default function Header(props){
         <div className="grid grid-cols-1 justify-items-center text-center">
             <div className="text-center h-48 w-48">
                 <img
-                    src="https://i.imgur.com/N5Dll8M.png"
-                    className="bg-transparent"
+                    src="https://i.imgur.com/bHnrfDb.png"
                     alt="headshot"
                 />
             </div>

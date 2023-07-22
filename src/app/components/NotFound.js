@@ -7,6 +7,7 @@ export default function NotFound(){
         <div className="h-min-screen w-min-screen">
             <img
                 src="/media/error/bg3.jpg"
+                alt="notFound"
                 className="h-full w-full"
             />
 

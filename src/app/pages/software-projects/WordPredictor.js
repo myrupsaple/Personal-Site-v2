@@ -27,14 +27,14 @@ export default function WordPredictor(props){
 
             <div>
                 A report explaining all of the reasoning and logic that went into this project can be found
-                on &nbsp;<a className="text-coral" href="https://rpubs.com/myrupsaple/DSCFullReport" target="_blank">RPubs</a>&nbsp;.
+                on &nbsp;<a className="text-coral" href="https://rpubs.com/myrupsaple/DSCFullReport" target="_blank" rel="noreferrer">RPubs</a>&nbsp;.
             </div>
 
             <br/>
 
             <div>
                 You can see the app in action on
-                &nbsp;<a className="text-coral" href="https://myrupsaple.shinyapps.io/WordPredictor/" target="_blank">Shiny Apps</a>&nbsp;.
+                &nbsp;<a className="text-coral" href="https://myrupsaple.shinyapps.io/WordPredictor/" target="_blank" rel="noreferrer">Shiny Apps</a>&nbsp;.
                 Note that you will need to wait for the app to load. If there are no buttons underneath "suggestions",
                 then the app has not finished loading. Once loaded, it should look something like this:
             </div>

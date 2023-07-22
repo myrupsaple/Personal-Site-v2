@@ -27,7 +27,7 @@ export default function Ucla(props){
                     <li>Received the runner-up award for best presentation at the annual UCLA Bioengineering Symposium.</li>
                     <li>
                         Continued research for two quarters beyond the symposium, eventually culminating in a publication in the American Academy of Otolaryngology
-                        (<a className="text-coral" href="https://journals.sagepub.com/doi/abs/10.1177/0194599820930229" target="_blank">Link</a>).
+                        (<a className="text-coral" href="https://journals.sagepub.com/doi/abs/10.1177/0194599820930229" target="_blank" rel="noreferrer">Link</a>).
                     </li>
                 </ul>
             </div>
@@ -38,7 +38,9 @@ export default function Ucla(props){
                 <h4 className={uclaClasses.title}>InterVarsity Christian Fellowship</h4>
                 <h6 className={uclaClasses.date}>Spring 2016, 2017, 2018, & 2019</h6>
                 <h6 className={uclaClasses.subtitle}>Planning Team (2016), Project Coordinator (2017-2019)</h6>
-                <h6 className={uclaClasses.subtitle}><a href="https://ivhg20181.wixsite.com/ivhungergames" target="_blank">2018 Website</a></h6>
+                <h6 className={uclaClasses.subtitle}>
+                    <a href="https://ivhg20181.wixsite.com/ivhungergames" target="_blank" rel="noreferrer">2018 Website</a>
+                </h6>
                 <ul>
                     <li>In 2016, worked with three other students to organize a scholarship fundraiser involving over 50 participants and bringing in over $5,000.</li>
                     <li>Served as the team leader the following three years, expanding the planning team, revising the event as necessary, and increasing income to over

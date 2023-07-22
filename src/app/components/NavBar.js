@@ -45,9 +45,9 @@ export default function NavBar(props){
                     </Link>
 
                     <a
-                        
-                        href="https://dl.dropboxusercontent.com/scl/fi/mskw0og8a956ai9fsm6xa/Resume-Riley-Matsuda.pdf?rlkey=slc41s2zzsmm2gnzl35vm73od&dl=0"
+                        href="https://dl.dropboxusercontent.com/scl/fi/rvam1wffkrgo1zl5s1uru/Riley-Matsuda-Resume.pdf?rlkey=8cwivz66prt1hp57v2prdd5ex&dl=0"
                         target="_blank"
+                        rel="noreferrer"
                         download
                     >
                         <h6 className={navBarClasses.rightSideItems.teal}>

@@ -19,7 +19,11 @@ export default function Home(props){
                 <Header/>
             </div>
 
-            <img src="https://i.imgur.com/gRgIAp7.png" className="w-full"/>
+            <img
+                src="https://i.imgur.com/gRgIAp7.png"
+                className="w-full"
+                alt="bit-headshot"
+            />
 
             <div className="bg-teal w-full px-10 sm:px-20 py-12 text-white drop-shadow-xl -mb-40">
                 <About/>

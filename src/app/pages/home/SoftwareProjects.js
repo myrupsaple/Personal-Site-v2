@@ -11,7 +11,7 @@ export default function WorkExperience(props){
     const setTabWrapper = useCallback((index) => {
         if(index === activeTab) setActiveTab(-1);
         else setActiveTab(index);
-    })
+    }, [activeTab])
 
     return (
         <>

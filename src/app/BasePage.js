@@ -54,7 +54,7 @@ export default function BasePage(props){
             window.removeEventListener('scroll', handleScroll);
             window.removeEventListener('resize', handleHeight);
         }
-    });
+    }, []);
 
     const isHome = document.getElementById('home_screen_name') ? true : false;
 

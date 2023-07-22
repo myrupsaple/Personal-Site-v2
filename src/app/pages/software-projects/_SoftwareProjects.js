@@ -24,7 +24,7 @@ export default function SoftwareProjects(props){
                         Finance Tracker
                     {/* </Link> */}
                 </h4>
-                <h6 className={softwareProjectClasses.utilized}><a>Utilized</a>: Windows Forms, .NET, C#, and SQL.</h6>
+                <h6 className={softwareProjectClasses.utilized}><u>Utilized</u>: Windows Forms, .NET, C#, and SQL.</h6>
                 <div className={softwareProjectClasses.content}>
                     <ul>
                         <li>Developed a Windows desktop app using Windows Forms and .NET that allows users to track spending habits.</li>
@@ -40,7 +40,7 @@ export default function SoftwareProjects(props){
                         Hunger Games App
                     </Link>
                 </h4>
-                <h6 className={softwareProjectClasses.utilized}><a>Utilized</a>: ReactJS, MySQL, NodeJS, Axios, Express, and AWS.</h6>
+                <h6 className={softwareProjectClasses.utilized}><u>Utilized</u>: ReactJS, MySQL, NodeJS, Axios, Express, and AWS.</h6>
                 <div className={softwareProjectClasses.content}>
                     <ul>
                         <li>Developed a web app to assist with the annual Hunger Games fundraiser hosted by InterVarsity Christian Fellowship at UCLA.</li>
@@ -60,7 +60,7 @@ export default function SoftwareProjects(props){
                         Word Predictor
                     </Link>
                 </h4>
-                <h6 className={softwareProjectClasses.utilized}><a>Utilized</a>: R, machine learning, and data science.</h6>
+                <h6 className={softwareProjectClasses.utilized}><u>Utilized</u>: R, machine learning, and data science.</h6>
                 <div className={softwareProjectClasses.content}>
                     <ul>
                         <li>Completed as a capstone project for the St. Johns Hopkins online Data Science specialization course.</li>
