@@ -5,6 +5,8 @@ import ScrollBar from './ScrollBar';
 
 import { navBarClasses } from './classes';
 
+const dropboxLink = 'https://dl.dropboxusercontent.com/scl/fi/1bz59ktzd8cpwnjgg92vk/Riley-Matsuda-Resume.pdf?rlkey=3herhcaahhxl6vp2xma94uz58&dl=0';
+
 export default function NavBar(props){
     const mounted = useRef(false);
     useEffect(() => {
@@ -45,7 +47,7 @@ export default function NavBar(props){
                     </Link>
 
                     <a
-                        href="https://dl.dropboxusercontent.com/scl/fi/kgljn01wdr8e15473lido/Resume-Riley-Matsuda.pdf?rlkey=m2x3jimrm3p55h0z30y075y87&dl=0"
+                        href={dropboxLink}
                         target="_blank"
                         rel="noreferrer"
                         download

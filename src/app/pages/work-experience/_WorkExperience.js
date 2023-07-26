@@ -30,11 +30,11 @@ export default function WorkExperience(props){
                 <h6 className={workExperienceClasses.position}>Lead Software Engineer, Manager</h6>
                 <div className={workExperienceClasses.content}>
                     <ul>
-                        <li>Designed an adaptive online testing system allowing for personalized student assessments, leading to improved student progress.</li>
-                        <li>Implemented customized PDF progress reports for students that could quickly be viewed by instructors or shared with parents.</li>
-                        <li>Established a server-side file system to store curriculum and graphic files, and integrated this with the Cloudinary API.</li>
-                        <li>Collected feedback and added new features in order to reduce administrative overhead and improve communication with parents.</li>
-                        <li><u>Applied knowledge</u> in ReactJS, Material UI, MySQL, NodeJS, Express, Jest (unit testing), RESTful design, and AWS.</li>
+                        <li><b>This position was performed under the same ownership as Mathnasium of Garden Grove.</b></li>
+                        <li>Improved student reassessment scores by 5% on average by implementing an adaptive online testing system.</li>
+                        <li>Cut administrative overhead and improved parent communication by continuously analyzing user needs and implementing time-saving features.</li>
+                        <li>Reduced file loading times by over 80% by establishing a server-side file storage and streaming system, and integrating this with the Cloudinary API to stream graphic files.</li>
+                        <li><u>Applied knowledge</u> in ReactJS, Material UI, MySQL, NodeJS, Express, Jest (unit testing), RESTful API design, and AWS.</li>
                         <li><Link to="/work-experience/mathplex-tutoring" className="text-coral">More Info</Link></li>
                     </ul>
                 </div>
@@ -50,10 +50,9 @@ export default function WorkExperience(props){
                 <div className={workExperienceClasses.content}>
                     <ul>
                         <li>Developed admin and member web portals from the ground up to manage and schedule appointments at the onset of the COVID-19 pandemic.</li>
-                        <li>Engineered a RESTful server backend using Express and JSON Web Tokens, ensuring fast and secure access to application data.</li>
-                        <li>Reduced parent complaints and management overhead by setting up reminder texts for appointments and by providing parents with online access to students’ session notes and progress reports.</li>
-                        <li>Implemented new features in order to improve internal communication and promote a data-driven approach to teaching.</li>
-                        <li><u>Applied knowledge</u> in full-stack development including ReactJS, Bootstrap, MySQL, NodeJS, Express, RESTful design, AWS.</li>
+                        <li>Decreased instructor administrative work hours by over 15% by streamlining notetaking and internal communication protocols.</li>
+                        <li>Increased customer satisfaction by implementing a SMS system using Twilio’s API, allowing parents to perform many basic functions without needing to log in to the web portal.</li>
+                        <li><u>Applied knowledge</u> in full-stack development: ReactJS, Bootstrap, MySQL, NodeJS, Express, RESTful API design, AWS.</li>
                         <li><Link to="/work-experience/mathnasium" className="text-coral">More Info</Link></li>
                     </ul>
                 </div>
