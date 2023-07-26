@@ -13,7 +13,7 @@ export default function About(props){
 
             <br/>
 
-            <div className="text-center px-0 sm:px-12 md:px-28 lg:px-44">
+            <div className="text-center px-0 py-4 sm:px-12 md:px-28 lg:px-44">
                 I am a full-stack web developer who is passionate about <u>programming</u> and <u>education</u>.
                 I enjoy learning new things and finding ways to innovate and improve existing processes.
                 For the past three and a half years, I have been fortunate enough to work at learning centers

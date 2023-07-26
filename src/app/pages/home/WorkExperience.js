@@ -8,7 +8,7 @@ import FamiliarThings from './components/FamiliarThings';
 const accordionClasses = 'm-0';
 
 export default function WorkExperience(props){
-    const [activeTab, setActiveTab] = useState(1);
+    const [activeTab, setActiveTab] = useState(0);
 
     const setTabWrapper = useCallback((index) => {
         if(index === activeTab) setActiveTab(-1);
@@ -117,9 +117,9 @@ export default function WorkExperience(props){
                 </AccordionDetails>
             </Accordion>
 
-            <br/>
+            <div className="clear-both h-12"/>
             <hr/>
-            <br/>
+            <div className="clear-both h-12"/>
 
             <FamiliarThings/>
         </>

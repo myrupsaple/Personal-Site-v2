@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 
 import Home from './pages/Home';
 import NavBar from './components/NavBar';
+import Footer from './components/Footer';
 
 import { basePageClasses } from './components/classes';
 
@@ -30,7 +31,6 @@ export default function BasePage(props){
 
     const [windowHeight, setWindowHeight] = useState(window.innerHeight);
     const [scrollPosition, setScrollPosition] = useState(0);
-    const [documentHeight, setDocumentHeight] = useState(0);
 
     let scrollNavTrigger = document?.getElementById('navbar-main')?.offsetHeight || 100; // Pixels
     scrollNavTrigger += 20;
@@ -47,8 +47,6 @@ export default function BasePage(props){
     useEffect(() => {
         window.addEventListener('scroll', handleScroll, { passive: true });
         window.addEventListener('resize', handleHeight);
-
-        if(mounted.current) setDocumentHeight(document.documentElement.scrollHeight);
 
         return () => {
             window.removeEventListener('scroll', handleScroll);
@@ -73,7 +71,6 @@ export default function BasePage(props){
                     scrollNavTrigger={scrollNavTrigger}
                     showScroll={isHome}
                     windowHeight={windowHeight}
-                    documentHeight={documentHeight}
                 />
                 
                 <div className={`min-h-screen ${basePageClasses.main}`}>
@@ -96,6 +93,8 @@ export default function BasePage(props){
                         <Route path="*" element={<NotFound/>}/>
                     </Routes>
                 </div>
+
+                <Footer/>
             </div>
         </div>
     );

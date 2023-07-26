@@ -12,7 +12,7 @@ export default function NavBar(props){
         return () => (mounted.current = false);
     });
 
-    const { showScroll, windowHeight, documentHeight, scrollPosition, scrollNavTrigger } = props;
+    const { showScroll, windowHeight, scrollPosition, scrollNavTrigger } = props;
 
     const navHeight = document.getElementById('navbar-main')?.offsetHeight || 0;
     const navStickyClasses = (
@@ -45,7 +45,7 @@ export default function NavBar(props){
                     </Link>
 
                     <a
-                        href="https://dl.dropboxusercontent.com/scl/fi/rvam1wffkrgo1zl5s1uru/Riley-Matsuda-Resume.pdf?rlkey=8cwivz66prt1hp57v2prdd5ex&dl=0"
+                        href="https://dl.dropboxusercontent.com/scl/fi/kgljn01wdr8e15473lido/Resume-Riley-Matsuda.pdf?rlkey=m2x3jimrm3p55h0z30y075y87&dl=0"
                         target="_blank"
                         rel="noreferrer"
                         download
@@ -72,7 +72,6 @@ export default function NavBar(props){
                 show={showScroll}
                 scrollNavTrigger={scrollNavTrigger}
                 windowHeight={windowHeight}
-                documentHeight={documentHeight}
             />
         </div>
     );

@@ -1,9 +1,12 @@
 import React from 'react';
 
 export default function ScrollBar(props){
-    const { show, scrollPosition, scrollNavTrigger, windowHeight, documentHeight } = props;
+    const { show, scrollPosition, scrollNavTrigger, windowHeight } = props;
+
+    const documentHeight = document.documentElement.scrollHeight;
 
     let scrollPercentage = scrollPosition / (documentHeight - windowHeight);
+    console.log(scrollPercentage, scrollPosition, documentHeight, windowHeight)
     scrollPercentage = `${scrollPercentage * 100}%`;
 
     const scrollOffset = (

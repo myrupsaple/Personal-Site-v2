@@ -25,23 +25,23 @@ export default function Home(props){
                 alt="bit-headshot"
             />
 
-            <div className="bg-teal w-full px-10 sm:px-20 py-12 text-white drop-shadow-xl -mb-40">
+            <div className="bg-teal w-full px-10 sm:px-20 py-20 text-white drop-shadow-xl -mb-40">
                 <About/>
 
                 <div className="clear-both h-40"/>
             </div>
             
-            <div className="rounded-lg bg-slateLight px-6 sm:px-12 py-8 mx-6 sm:mx-12 mb-24 drop-shadow-xl">
+            <div className="rounded-lg bg-slateLight px-6 sm:px-12 pt-8 pb-16 mx-6 sm:mx-12 mb-24 drop-shadow-xl">
                 <WorkExperience/>
             </div>
 
             <div className="bg-coral w-full px-10 sm:px-20 py-12 text-white drop-shadow-xl -mb-40">
                 <SoftwareProjects/>
 
-                <div className="clear-both h-40"/>
+                <div className="clear-both h-60"/>
             </div>
 
-            <div className="rounded-lg bg-slateLight px-6 sm:px-12 py-8 mx-6 sm:mx-12 mb-12 sm:mb-24 drop-shadow-xl">
+            <div className="rounded-lg bg-slateLight px-6 sm:px-12 pt-8 pb-16 mx-6 sm:mx-12 mb-12 sm:mb-24 drop-shadow-xl">
                 <OtherWorks/>
             </div>
         </div>
