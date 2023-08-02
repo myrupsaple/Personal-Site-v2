@@ -20,6 +20,12 @@ export default function OtherWorks(props){
 
             <div className="clear-both h-4"/>
             
+            <h6 className={otherWorksClasses.title}>Microsoft Azure Fundamentals</h6>
+            <div className={otherWorksClasses.description}>Credential ID 4F607B9234EBB31A</div>
+            <div className={otherWorksClasses.date}>Earned August 2021</div>
+
+            <div className="clear-both h-4"/>
+            
             <h6 className={otherWorksClasses.title}>CBEST Certification</h6>
             <div className={otherWorksClasses.description}>California Basic Educational Skills Test</div>
             <div className={otherWorksClasses.date}>Earned August 2019</div>
